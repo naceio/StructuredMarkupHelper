@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Raleway', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  color: #6DA1EA;
+}
+
+iframe {
+    display: block;
+    background: #000;
+    border: none; 
+    height: 100vh;
+    /*width: 100vw;*/
+    border-top: 1px solid rgb(236, 236, 236);
+}
+
+mark{
+    background: orange;
+    color: black;
+}

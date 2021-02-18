@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "StructuredMarkupHelper.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "--generate-markup --base-path ../../../wdir --document document.txt --vocab-mapping iptc_schemaorg_map_truncated.json --expertai-config expertai-config.json --markup-output markup-mapping.json"
+    }
+  }
+}

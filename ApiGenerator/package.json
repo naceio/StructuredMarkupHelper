@@ -1,0 +1,9 @@
+{
+    "name": "ApiGenerator",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "expertio": "openapi-generator-cli generate -i nlapi.yaml -g csharp -o ./expertio --config csharp-config.json"
+    }
+}
