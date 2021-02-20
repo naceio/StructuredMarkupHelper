@@ -46,11 +46,11 @@ function Home() {
                         </h1>
                             <p className="main-par">
                                 Schema.org is the result of collaboration between Google, Bing, Yandex, and Yahoo!
-                                to improve the web by creating a structured data markup schema supported by major search engines. On-page markup helps search engines understand the information on web pages and provide richer search results
+                                to improve the web by creating a structured data markup schema supported by major search engines. On-page markup helps search engines understand the information on web pages and provide richer search results!
                                
                         </p>
                         <p className="second-par">
-                            Markup expert will help you to generate structured-data markup by analyzing the content of your webpage, powered by 
+                            Markup expert will help you generate structured-data markup by analyzing the content of your webpage; powered by 
                             <a href="https://www.expert.ai/" target="_blank">expert.ai</a>
                         </p>
                         </Grid>
@@ -82,6 +82,7 @@ function Home() {
                 <Grid item xs={7}>
                     <div className="landing-container">
                         <img src={Landing} />
+                        <a className="freepik-refer" href="https://www.freepik.com/vectors/design">Designed by freepik</a>
                     </div>
                 </Grid>
         </React.Fragment>

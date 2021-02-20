@@ -142,100 +142,102 @@ function Analyze() {
                     <iframe id='web-frame' src={`${globalConfig.serverUrl}/markup/webpage?url=${url}`} height="100%" width="100%"></iframe>
                 </Grid>
 
-                <Grid item xs={3} style={{ padding: '10px', borderLeft: '1px solid #ccc' }}>
+                <Grid item xs={3} style={{ padding: '10px', borderLeft: '1px solid #ccc' }} >
                     <div style={{ color: '#FC826A', fontSize: '2.2vw' }}>Schemas:</div>
-                    {
-                        markupResult?.data?.mappings?.map(m => {
-                            return <Paper style={{ margin: '15px 0', padding: '10px' }}>
-                                <Box display="flex" flexDirection="column" flexGrow="1">
+                    <div className='schemas-container'>
+                        {
+                            markupResult?.data?.mappings?.map(m => {
+                                return <Paper style={{ margin: '15px 0', padding: '10px' }}>
+                                    <Box display="flex" flexDirection="column" flexGrow="1">
 
-                                    <Box display="flex" justifyContent="space-between" flexGrow="1">
-                                        <Box display="flex" justifyContent="flex-start">
-                                            <Box className="schema-link">
-                                                <a href={`https://schema.org/${m.schemaOrgType.schemaType}`} target="_blank">
-                                                    {m.schemaOrgType.schemaType} <span style={{ color: '#aaa', fontSize: '0.5vw' }}>(schema.org)</span>
-                                                </a>
+                                        <Box display="flex" justifyContent="space-between" flexGrow="1">
+                                            <Box display="flex" justifyContent="flex-start">
+                                                <Box className="schema-link">
+                                                    <a href={`https://schema.org/${m.schemaOrgType.schemaType}`} target="_blank">
+                                                        {m.schemaOrgType.schemaType} <span style={{ color: '#aaa', fontSize: '0.5vw' }}>(schema.org)</span>
+                                                    </a>
+                                                </Box>
                                             </Box>
-                                        </Box>
-                                        <Box display="flex" justifyContent="flex-end" flexGrow="1">
-                                            <Box flexDirection="column" justifyContent="flex-end">
-                                                <Box display="flex">
-                                                    <Chip
-                                                        size="small"
-                                                        icon={<SearchIcon />}
-                                                        label="Find in page"
-                                                        clickable
-                                                        color="primary"
-                                                        onClick={() => {
+                                            <Box display="flex" justifyContent="flex-end" flexGrow="1">
+                                                <Box flexDirection="column" justifyContent="flex-end">
+                                                    <Box display="flex">
+                                                        <Chip
+                                                            size="small"
+                                                            icon={<SearchIcon />}
+                                                            label="Find in page"
+                                                            clickable
+                                                            color="primary"
+                                                            onClick={() => {
 
-                                                            let findItem = findIndices[m.schemaOrgType.schemaType];
-                                                            if (findItem == undefined) {
-                                                                findItem = 0;
-                                                                findIndices[m.schemaOrgType.schemaType] = findItem;
-                                                            }
-                                                            else {
-                                                                findItem = (findItem + 1) % m.positions.length
-                                                                findIndices[m.schemaOrgType.schemaType] = findItem;
-                                                            }
+                                                                let findItem = findIndices[m.schemaOrgType.schemaType];
+                                                                if (findItem == undefined) {
+                                                                    findItem = 0;
+                                                                    findIndices[m.schemaOrgType.schemaType] = findItem;
+                                                                }
+                                                                else {
+                                                                    findItem = (findItem + 1) % m.positions.length
+                                                                    findIndices[m.schemaOrgType.schemaType] = findItem;
+                                                                }
 
-                                                            let pos = m.positions[findItem];
-                                                            let word = markupResult.data?.document?.text.substring(pos.start, pos.end);
+                                                                let pos = m.positions[findItem];
+                                                                let word = markupResult.data?.document?.text.substring(pos.start, pos.end);
 
-                                                            (document as any).getElementById('web-frame').contentWindow.window.find(word, false, false, true, true, true, false);
+                                                                (document as any).getElementById('web-frame').contentWindow.window.find(word, false, false, true, true, true, false);
 
-                                                            // (window as any)['mark'] = markInstance;
-                                                            // markInstance.unmark({
-                                                            //     done: () => {
-                                                            //         markInstance.mark(word, { iframes: true })
-                                                            //     },
-                                                            //     iframes: true
-                                                            // });
+                                                                // (window as any)['mark'] = markInstance;
+                                                                // markInstance.unmark({
+                                                                //     done: () => {
+                                                                //         markInstance.mark(word, { iframes: true })
+                                                                //     },
+                                                                //     iframes: true
+                                                                // });
 
-                                                            // if ((window as any).find) {
-                                                            //     // aString, aCaseSensitive, aBackwards, aWrapAround, aWholeWord, aSearchInFrames, aShowDialog
-                                                            //     (window as any).find(word, false, false, true, true, true, false);
-                                                            // }
+                                                                // if ((window as any).find) {
+                                                                //     // aString, aCaseSensitive, aBackwards, aWrapAround, aWholeWord, aSearchInFrames, aShowDialog
+                                                                //     (window as any).find(word, false, false, true, true, true, false);
+                                                                // }
 
-                                                            // for (let offset of m.positions) {
-                                                            //     console.log('start', offset.start, 'end', offset.end)
-                                                            //     let word = markupResult.data?.document?.text.substring(offset.start, offset.end);
-                                                            // }
-                                                        }} />
+                                                                // for (let offset of m.positions) {
+                                                                //     console.log('start', offset.start, 'end', offset.end)
+                                                                //     let word = markupResult.data?.document?.text.substring(offset.start, offset.end);
+                                                                // }
+                                                            }} />
+                                                    </Box>
                                                 </Box>
                                             </Box>
                                         </Box>
-                                    </Box>
-                                    <Box display="flex" flexGrow="1" style={{ marginTop: '15px' }} flexDirection="column">
+                                        <Box display="flex" flexGrow="1" style={{ marginTop: '15px' }} flexDirection="column">
 
-                                        <Box display="flex" style={{ color: '#CCC', fontSize: '0.5vw', marginBottom: '5px' }}>mappings with IPTC:</Box>
-                                        <Box display="flex">
-                                            {
-                                                m.iptcCategories.map(iptc => {
-                                                    return <Box>
-                                                        <Chip style={{ marginLeft: '5px' }} label={iptc.iptcLabel} />
-                                                    </Box>
-                                                })
-                                            }
+                                            <Box display="flex" style={{ color: '#CCC', fontSize: '0.5vw', marginBottom: '5px' }}>mappings with IPTC:</Box>
+                                            <Box display="flex">
+                                                {
+                                                    m.iptcCategories.map(iptc => {
+                                                        return <Box>
+                                                            <Chip style={{ marginLeft: '5px' }} label={iptc.iptcLabel} />
+                                                        </Box>
+                                                    })
+                                                }
+                                            </Box>
+                                        </Box>
+                                        <Box display="flex" flexGrow="1" style={{ marginTop: '15px' }} flexDirection="column">
+
+                                            <Box display="flex" style={{ color: '#CCC', fontSize: '0.5vw', marginBottom: '5px' }}>mapped words:</Box>
+                                            <Box display="flex">
+                                                {
+                                                    m.positions.map(pos => {
+                                                        return <Box>
+                                                            <Chip style={{ marginLeft: '5px' }}
+                                                                color="secondary" label={markupResult.data?.document?.text.substring(pos.start, pos.end)} variant="outlined" />
+                                                        </Box>
+                                                    })
+                                                }
+                                            </Box>
                                         </Box>
                                     </Box>
-                                    <Box display="flex" flexGrow="1" style={{ marginTop: '15px' }} flexDirection="column">
-
-                                        <Box display="flex" style={{ color: '#CCC', fontSize: '0.5vw', marginBottom: '5px' }}>mapped words:</Box>
-                                        <Box display="flex">
-                                            {
-                                                m.positions.map(pos => {
-                                                    return <Box>
-                                                        <Chip style={{ marginLeft: '5px' }}
-                                                            color="secondary" label={markupResult.data?.document?.text.substring(pos.start, pos.end)} variant="outlined" />
-                                                    </Box>
-                                                })
-                                            }
-                                        </Box>
-                                    </Box>
-                                </Box>
-                            </Paper>
-                        })
-                    }
+                                </Paper>
+                            })
+                        }
+                    </div>
                 </Grid>
 
             </Grid>

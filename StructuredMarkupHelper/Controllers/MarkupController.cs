@@ -28,6 +28,7 @@ namespace StructuredMarkupHelper.Controllers
 
         [HttpGet]
         [Route("index")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public ContentResult Index()
         {
             return Content("Hello raoof", "text/html");
@@ -35,6 +36,7 @@ namespace StructuredMarkupHelper.Controllers
 
         [HttpGet]
         [Route("webpage")]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public ContentResult WebPage(string url)
         {
             HeadlessBrowser headlessBrowser = new HeadlessBrowser();

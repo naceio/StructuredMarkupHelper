@@ -1,16 +1,6 @@
 [
   {
     "IptcVocab": {
-      "IptcId": "20000004",
-      "IptcLabel": "Cartoon"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Car",
-      "SchemaType": "Car"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000006",
       "IptcLabel": "Film festival"
     },
@@ -37,356 +27,6 @@
     "SchemaOrgVocab": {
       "SchemaId": "schema:DanceEvent",
       "SchemaType": "DanceEvent"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PriceSpecification",
-      "SchemaType": "PriceSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:SoftwareApplication",
-      "SchemaType": "SoftwareApplication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PublicationIssue",
-      "SchemaType": "PublicationIssue"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:WebApplication",
-      "SchemaType": "WebApplication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:ActionAccessSpecification",
-      "SchemaType": "ActionAccessSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:RepaymentSpecification",
-      "SchemaType": "RepaymentSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PreventionIndication",
-      "SchemaType": "PreventionIndication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:BroadcastFrequencySpecification",
-      "SchemaType": "BroadcastFrequencySpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:MedicalContraindication",
-      "SchemaType": "MedicalContraindication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:OpeningHoursSpecification",
-      "SchemaType": "OpeningHoursSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:DeliveryChargeSpecification",
-      "SchemaType": "DeliveryChargeSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PublicationVolume",
-      "SchemaType": "PublicationVolume"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PostalCodeRangeSpecification",
-      "SchemaType": "PostalCodeRangeSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:SpeakableSpecification",
-      "SchemaType": "SpeakableSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:CompoundPriceSpecification",
-      "SchemaType": "CompoundPriceSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:ExchangeRateSpecification",
-      "SchemaType": "ExchangeRateSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PropertyValueSpecification",
-      "SchemaType": "PropertyValueSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:EngineSpecification",
-      "SchemaType": "EngineSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:MedicalIndication",
-      "SchemaType": "MedicalIndication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:ApprovedIndication",
-      "SchemaType": "ApprovedIndication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:DatedMoneySpecification",
-      "SchemaType": "DatedMoneySpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:MobileApplication",
-      "SchemaType": "MobileApplication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:UnitPriceSpecification",
-      "SchemaType": "UnitPriceSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:LifestyleModification",
-      "SchemaType": "LifestyleModification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:MedicalGuidelineContraindication",
-      "SchemaType": "MedicalGuidelineContraindication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:TreatmentIndication",
-      "SchemaType": "TreatmentIndication"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PaymentChargeSpecification",
-      "SchemaType": "PaymentChargeSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:HealthPlanCostSharingSpecification",
-      "SchemaType": "HealthPlanCostSharingSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PublicationEvent",
-      "SchemaType": "PublicationEvent"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000015",
-      "IptcLabel": "Fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:LocationFeatureSpecification",
-      "SchemaType": "LocationFeatureSpecification"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000016",
-      "IptcLabel": "Non-fiction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000017",
-      "IptcLabel": "Poetry"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:GeospatialGeometry",
-      "SchemaType": "GeospatialGeometry"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000022",
-      "IptcLabel": "Classical music"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Class",
-      "SchemaType": "Class"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000023",
-      "IptcLabel": "Country music"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Country",
-      "SchemaType": "Country"
     }
   },
   {
@@ -721,16 +361,6 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000038",
-      "IptcLabel": "Culture"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Sculpture",
-      "SchemaType": "Sculpture"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000047",
       "IptcLabel": "Newspaper"
     },
@@ -861,16 +491,6 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000045",
-      "IptcLabel": "Mass media"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Mass",
-      "SchemaType": "Mass"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000096",
       "IptcLabel": "Drug trafficking"
     },
@@ -897,66 +517,6 @@
     "SchemaOrgVocab": {
       "SchemaId": "schema:Courthouse",
       "SchemaType": "Courthouse"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000118",
-      "IptcLabel": "Prosecution"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000132",
-      "IptcLabel": "Missing person"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Person",
-      "SchemaType": "Person"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000133",
-      "IptcLabel": "Police"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:MerchantReturnPolicy",
-      "SchemaType": "MerchantReturnPolicy"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000133",
-      "IptcLabel": "Police"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:BoardingPolicyType",
-      "SchemaType": "BoardingPolicyType"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000133",
-      "IptcLabel": "Police"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:PoliceStation",
-      "SchemaType": "PoliceStation"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000137",
-      "IptcLabel": "Prison"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Person",
-      "SchemaType": "Person"
     }
   },
   {
@@ -1011,16 +571,6 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000200",
-      "IptcLabel": "Joint venture"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Joint",
-      "SchemaType": "Joint"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000205",
       "IptcLabel": "New product or service"
     },
@@ -1041,52 +591,12 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000206",
-      "IptcLabel": "Patent, copyright and trademark"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Patient",
-      "SchemaType": "Patient"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000207",
       "IptcLabel": "Product recall"
     },
     "SchemaOrgVocab": {
       "SchemaId": "schema:Product",
       "SchemaType": "Product"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000211",
-      "IptcLabel": "Aquaculture"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Sculpture",
-      "SchemaType": "Sculpture"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000216",
-      "IptcLabel": "Viniculture"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Sculpture",
-      "SchemaType": "Sculpture"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000210",
-      "IptcLabel": "Agriculture"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Sculpture",
-      "SchemaType": "Sculpture"
     }
   },
   {
@@ -1141,42 +651,12 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000232",
-      "IptcLabel": "Telecommunication equipment"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000233",
-      "IptcLabel": "Telecommunication service"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000233",
       "IptcLabel": "Telecommunication service"
     },
     "SchemaOrgVocab": {
       "SchemaId": "schema:Service",
       "SchemaType": "Service"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000238",
-      "IptcLabel": "Heavy construction"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
     }
   },
   {
@@ -1211,26 +691,6 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000235",
-      "IptcLabel": "Construction and property"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Property",
-      "SchemaType": "Property"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000235",
-      "IptcLabel": "Construction and property"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000245",
       "IptcLabel": "Clothing"
     },
@@ -1257,16 +717,6 @@
     "SchemaOrgVocab": {
       "SchemaId": "schema:DepartmentStore",
       "SchemaType": "DepartmentStore"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000246",
-      "IptcLabel": "Department store"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Apartment",
-      "SchemaType": "Apartment"
     }
   },
   {
@@ -1321,66 +771,6 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000252",
-      "IptcLabel": "Retail"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:AutoRental",
-      "SchemaType": "AutoRental"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000252",
-      "IptcLabel": "Retail"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:BedDetails",
-      "SchemaType": "BedDetails"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000252",
-      "IptcLabel": "Retail"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:EnergyConsumptionDetails",
-      "SchemaType": "EnergyConsumptionDetails"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000252",
-      "IptcLabel": "Retail"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:MovieRentalStore",
-      "SchemaType": "MovieRentalStore"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000252",
-      "IptcLabel": "Retail"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:RentalCarReservation",
-      "SchemaType": "RentalCarReservation"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000252",
-      "IptcLabel": "Retail"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:OfferShippingDetails",
-      "SchemaType": "OfferShippingDetails"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000253",
       "IptcLabel": "Speciality store"
     },
@@ -1425,28 +815,8 @@
       "IptcLabel": "Electricity production and distribution"
     },
     "SchemaOrgVocab": {
-      "SchemaId": "schema:Product",
-      "SchemaType": "Product"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000260",
-      "IptcLabel": "Electricity production and distribution"
-    },
-    "SchemaOrgVocab": {
       "SchemaId": "schema:Electrician",
       "SchemaType": "Electrician"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000260",
-      "IptcLabel": "Electricity production and distribution"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
     }
   },
   {
@@ -1467,16 +837,6 @@
     "SchemaOrgVocab": {
       "SchemaId": "schema:Energy",
       "SchemaType": "Energy"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000273",
-      "IptcLabel": "Auction service"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
     }
   },
   {
@@ -1591,58 +951,8 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000285",
-      "IptcLabel": "Personal finance"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Person",
-      "SchemaType": "Person"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000286",
-      "IptcLabel": "Personal income"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Person",
-      "SchemaType": "Person"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000287",
-      "IptcLabel": "Personal investing"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Person",
-      "SchemaType": "Person"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000288",
       "IptcLabel": "Personal service"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Service",
-      "SchemaType": "Service"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000288",
-      "IptcLabel": "Personal service"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Person",
-      "SchemaType": "Person"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000289",
-      "IptcLabel": "Printing-promotional service"
     },
     "SchemaOrgVocab": {
       "SchemaId": "schema:Service",
@@ -1655,8 +965,8 @@
       "IptcLabel": "Printing-promotional service"
     },
     "SchemaOrgVocab": {
-      "SchemaId": "schema:Painting",
-      "SchemaType": "Painting"
+      "SchemaId": "schema:Service",
+      "SchemaType": "Service"
     }
   },
   {
@@ -1811,16 +1121,6 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000320",
-      "IptcLabel": "Mining"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Painting",
-      "SchemaType": "Painting"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000323",
       "IptcLabel": "Distiller and brewer"
     },
@@ -1847,16 +1147,6 @@
     "SchemaOrgVocab": {
       "SchemaId": "schema:Product",
       "SchemaType": "Product"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000329",
-      "IptcLabel": "Textile and clothing"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Text",
-      "SchemaType": "Text"
     }
   },
   {
@@ -1911,58 +1201,8 @@
   },
   {
     "IptcVocab": {
-      "IptcId": "20000625",
-      "IptcLabel": "State-owned enterprise"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:State",
-      "SchemaType": "State"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000349",
-      "IptcLabel": "Business enterprise"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:BusinessEvent",
-      "SchemaType": "BusinessEvent"
-    }
-  },
-  {
-    "IptcVocab": {
       "IptcId": "20000359",
       "IptcLabel": "Gross domestic product"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Product",
-      "SchemaType": "Product"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000360",
-      "IptcLabel": "Industrial production"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Product",
-      "SchemaType": "Product"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000360",
-      "IptcLabel": "Industrial production"
-    },
-    "SchemaOrgVocab": {
-      "SchemaId": "schema:Action",
-      "SchemaType": "Action"
-    }
-  },
-  {
-    "IptcVocab": {
-      "IptcId": "20000362",
-      "IptcLabel": "Productivity"
     },
     "SchemaOrgVocab": {
       "SchemaId": "schema:Product",

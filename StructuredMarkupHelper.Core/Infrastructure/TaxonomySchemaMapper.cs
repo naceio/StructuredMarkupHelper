@@ -74,9 +74,14 @@ namespace StructuredMarkupHelper.Core.Infrastructure
 
                 var splittedDoc = DocumentSplitter(sanitizedText);
 
+                //if (splittedDoc.Count > 10)
+                //{
+                //    throw new InvalidOperationException($"Content is too large");
+                //}
+
                 if (splittedDoc.Count > 10)
                 {
-                    throw new InvalidOperationException($"Content is too large");
+                    splittedDoc = splittedDoc.Take(10).ToList();
                 }
 
                 foreach (var sDoc in splittedDoc)
