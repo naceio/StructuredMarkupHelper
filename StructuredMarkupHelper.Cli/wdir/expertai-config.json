@@ -1,0 +1,6 @@
+{
+  "token": "",
+  "username": "",
+  "password": "",
+  "tokenRequestEndpoint": "https://developer.expert.ai/oauth2/token"
+}

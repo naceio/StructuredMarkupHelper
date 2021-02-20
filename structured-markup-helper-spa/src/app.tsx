@@ -28,6 +28,9 @@ function App() {
                             </Box>
                             <Box display="flex" justifyContent="flex-end" flexGrow="1" className="menu-container">
                                 <Box className="menu-link">
+                                    <a href="https://github.com/naceio/StructuredMarkupHelper" target="_blank">github</a>
+                                </Box>
+                                <Box className="menu-link">
                                     <a href="https://www.expert.ai/" target="_blank">expert.ai</a>
                                 </Box>
                             </Box>

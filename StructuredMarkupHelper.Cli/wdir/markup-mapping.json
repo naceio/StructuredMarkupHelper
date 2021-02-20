@@ -1,0 +1,85 @@
+{
+  "Document": {
+    "Text": "The insurance industry is at a critical juncture right now. As combined ratios continue to narrow and business processes remain inundated by textheavy documentation, organizations are in desperate need of process efficiencies to improve their economic outlook.Fortunately, artificial intelligence has proven effective in augmenting numerous time and textintensive underwriting processes including risk engineering, policy review and claims management  among others. But its not quite so simple.AI is a powerful technology that, when applied correctly, can transform the way a business functions. The problem is that companies fail to put enough thought into the business cases that should be driving these projects forward. This is why nearly 80 of companies have reported their AI projects stalling, according to Dimensional Research.This goes to show that AI is not a silver bullet, but rather a technology that you must carefully approach and integrate into your larger business function. So how do you draft a business case for AI that covers all the bases before you fully commit Ill show you how.Establishing Your Core Business CasePreparation makes all the difference when it comes to establishing AI at your company. Those who are most successful with it are those that have thought out every detail well ahead of time and know exactly how it can and should impact the business. There are many factors to consider, so lets start from the top.Identify Your Business ObjectivesArtificial intelligence is not a onesizefitsall solution  especially within the insurance industry. How one company hopes to benefit from AI will not necessarily align to the needs of your own. So be clear as to what you seek to gain from AI because this is the foundation of your investment. You do not have the benefit of throwing things at the wall and seeing what sticks.More than likely, you are looking for AI to support one at least one of the following:Process accelerationReduce cost of serviceLoss reductionavoidanceScale your capacityYou can certainly work towards multiple objectives, but be careful not to overextend yourself. You are better off focusing on one primary objective then expanding your scope once you have established some modicum of success."
+  },
+  "Mappings": [
+    {
+      "IptcCategories": [
+        {
+          "IptcId": "20000279",
+          "IptcLabel": "Insurance"
+        }
+      ],
+      "SchemaOrgType": {
+        "SchemaId": "schema:HealthInsurancePlan",
+        "SchemaType": "HealthInsurancePlan"
+      },
+      "Positions": [
+        {
+          "Start": 4,
+          "End": 13
+        },
+        {
+          "Start": 415,
+          "End": 421
+        },
+        {
+          "Start": 1563,
+          "End": 1572
+        }
+      ]
+    },
+    {
+      "IptcCategories": [
+        {
+          "IptcId": "20000279",
+          "IptcLabel": "Insurance"
+        }
+      ],
+      "SchemaOrgType": {
+        "SchemaId": "schema:InsuranceAgency",
+        "SchemaType": "InsuranceAgency"
+      },
+      "Positions": [
+        {
+          "Start": 4,
+          "End": 13
+        },
+        {
+          "Start": 415,
+          "End": 421
+        },
+        {
+          "Start": 1563,
+          "End": 1572
+        }
+      ]
+    },
+    {
+      "IptcCategories": [
+        {
+          "IptcId": "20000279",
+          "IptcLabel": "Insurance"
+        }
+      ],
+      "SchemaOrgType": {
+        "SchemaId": "schema:CourseInstance",
+        "SchemaType": "CourseInstance"
+      },
+      "Positions": [
+        {
+          "Start": 4,
+          "End": 13
+        },
+        {
+          "Start": 415,
+          "End": 421
+        },
+        {
+          "Start": 1563,
+          "End": 1572
+        }
+      ]
+    }
+  ]
+}
