@@ -106,7 +106,20 @@ html {
 }
 
 .schemas-container{
-    height: calc(100vh - 176px);
+    height: calc(65vh - 176px);
     overflow: scroll;
     overflow-x: hidden;
+    border-bottom: 1px solid #ccc
+}
+
+.jsonld-container{
+    height: 35vh;
+    padding-top: 30px;
+    overflow: scroll;
+    overflow-x: hidden;
+    .jsonld-link{
+        text-decoration: none;
+        color:#00ABF1;
+        text-shadow: 0 1px 0px #ffffff;
+    }
 }

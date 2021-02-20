@@ -11,6 +11,7 @@ import {
 import { globalConfig } from './global-config';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountTreeOutlinedIcon from '@material-ui/icons/AccountTreeOutlined';
+import ReactJson from 'react-json-view';
 //import Mark from 'mark.js'
 const Mark = require('mark.js');
 //document.getElementById('web-frame')
@@ -251,6 +252,17 @@ function Analyze() {
                                 </Paper>
                             })
                         }
+                    </div>
+                    <div className="jsonld-container">
+                        <a className="jsonld-link" target="blank" href="https://developers.google.com/search/docs/guides/intro-structured-data">How to include JSON-LD in your web page</a>
+                        <ReactJson style={{ marginTop: '15px' }} enableClipboard={false} displayDataTypes={false} src={{
+                            '@context': 'http://schema.org',
+                            '@graph': markupResult?.data?.mappings?.map(x => {
+                                return {
+                                    '@type': x.schemaOrgType.schemaType
+                                }
+                            })
+                        }} />
                     </div>
                 </Grid>
 
