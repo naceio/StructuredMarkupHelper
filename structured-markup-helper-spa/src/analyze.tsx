@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Button, Chip, Divider, IconButton, InputBase, makeStyles, Typography, withStyles } from '@material-ui/core';
+import { Box, Button, Chip, CircularProgress, Divider, IconButton, InputBase, LinearProgress, makeStyles, Typography, withStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import {
@@ -71,7 +71,7 @@ let findIndices: { [key: string]: number } = {};
 function Analyze() {
 
 
-    const markInstance = new Mark(document.body);
+    //const markInstance = new Mark(document.body);
 
     const classes = useStyles();
     const history = useHistory();
@@ -79,7 +79,7 @@ function Analyze() {
     let query = new URLSearchParams(useLocation().search);
 
     let url: string = query.get("url") as string;
-    let newUrl: string;
+    const [newUrl, setUrl] = useState(url);
 
     const [markupResult, setMarkupResult] = useState<MarkupResult>({
         data: {
@@ -88,6 +88,9 @@ function Analyze() {
         hasError: false
     });
     const [mounted, setMounted] = useState(false);
+
+
+    const [analyzed, setAnalyzed] = useState(false);
 
     if (!mounted) {
         fetch(`${globalConfig.serverUrl}/markup/url-markup`, {
@@ -104,6 +107,7 @@ function Analyze() {
                 else {
                     findIndices = {};
                     setMarkupResult(result);
+                    setAnalyzed(true);
                 }
             })
         });
@@ -118,17 +122,25 @@ function Analyze() {
             <Grid container style={{ borderTop: '1px solid #ccc' }}>
 
                 <Grid item xs={9}>
+                    {analyzed ? null : <LinearProgress />}
 
-                    <Paper component="form" className={classes.root}>
-                        <InputBase
-                            defaultValue={url}
-                            className={classes.input}
-                            placeholder="Enter a Url to Analyze"
-                            inputProps={{ 'aria-label': 'Url' }}
-                            onChange={e => {
-                                newUrl = e.target.value;
-                            }}
-                        />
+                    <Paper className={classes.root}>
+                        <form style={{ width: '100%' }} onSubmit={(e) => {
+                            if (newUrl) {
+                                history.push(`/analyze?url=${newUrl}`);
+                            }
+                            e.preventDefault();
+                        }}>
+                            <InputBase style={{ width: '100%' }}
+                                defaultValue={url}
+                                className={classes.input}
+                                placeholder="Enter a Url to Analyze"
+                                inputProps={{ 'aria-label': 'Url' }}
+                                onChange={e => {
+                                    setUrl(e.target.value);
+                                }}
+                            />
+                        </form>
                         <Divider className={classes.divider} orientation="vertical" />
                         <IconButton color="primary" className={classes.iconButton} aria-label="directions" onClick={() => {
                             if (newUrl) {
@@ -144,6 +156,8 @@ function Analyze() {
 
                 <Grid item xs={3} style={{ padding: '10px', borderLeft: '1px solid #ccc' }} >
                     <div style={{ color: '#FC826A', fontSize: '2.2vw' }}>Schemas:</div>
+
+                    {analyzed ? null : <CircularProgress />}
                     <div className='schemas-container'>
                         {
                             markupResult?.data?.mappings?.map(m => {

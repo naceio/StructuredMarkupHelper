@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Button, Divider, IconButton, InputBase, makeStyles, Typography, withStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -34,7 +34,7 @@ function Home() {
     const classes = useStyles();
     const history = useHistory();
 
-    let url:string;
+    const [url, setUrl] = useState<string>('');
 
     return (
         <React.Fragment>
@@ -56,23 +56,30 @@ function Home() {
                         </Grid>
 
                         <Grid item xs={12}>
-                            <Paper component="form" className={classes.root}>
-                                <InputBase
-                                    className={classes.input}
-                                    placeholder="Enter a Url to Analyze"
-                                    inputProps={{ 'aria-label': 'Url' }}
-                                    onChange={e=>{
-                                        url = e.target.value;
-                                    }}
-                                />
-                                <Divider className={classes.divider} orientation="vertical" />
-                                <IconButton color="primary" className={classes.iconButton} aria-label="directions" onClick={()=>{
-                                    if(url){
-                                        history.push(`/analyze?url=${url}`);
-                                    }
-                                }}>
-                                    <AccountTreeOutlinedIcon />
-                                </IconButton>
+                            <Paper className={classes.root}>
+                                    <form style={{width:'100%'}} onSubmit={(e)=>{
+                                        if(url){
+                                            history.push(`/analyze?url=${url}`);
+                                        }
+                                        e.preventDefault();
+                                    }}>
+                                    <InputBase  style={{width:'100%'}}
+                                        className={classes.input}
+                                        placeholder="Enter a Url to Analyze"
+                                        inputProps={{ 'aria-label': 'Url' }}
+                                        onChange={e=>{
+                                            setUrl(e.target.value);
+                                        }}
+                                    />
+                                    </form>
+                                    <Divider className={classes.divider} orientation="vertical" />
+                                    <IconButton color="primary" className={classes.iconButton} aria-label="directions" onClick={()=>{
+                                        if(url){
+                                            history.push(`/analyze?url=${url}`);
+                                        }
+                                    }}>
+                                        <AccountTreeOutlinedIcon />
+                                    </IconButton>
                             </Paper>
                         </Grid>
 
