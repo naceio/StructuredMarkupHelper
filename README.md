@@ -19,12 +19,12 @@ Generate markup with the following command:
 ```bash
 StructuredMarkupHelper.Cli --generate-markup --base-path wdir --document document.txt --vocab-mapping iptc_schemaorg_map.json --expertai-config expertai-config.json --markup-output markup-mapping.json
 
-run `StructuredMarkupHelper.Cli -h` to what are all inputs:
---base-path -> working directory
---document  -> the input text file
---vocab-mapping -> generated mapping file between iptc and schema.org(run `StructuredMarkupHelper.Cli -h` to see how this mapping can be generated)
---expertai-config -> expert.ai API configuration
---markup-output -> output of the markup
+# run `StructuredMarkupHelper.Cli -h` to what are all inputs:
+# --base-path -> working directory
+# --document  -> the input text file
+# --vocab-mapping -> generated mapping file between iptc and schema.org(run `StructuredMarkupHelper.Cli -h` to see how this mapping can be generated)
+# --expertai-config -> expert.ai API configuration
+# --markup-output -> output of the markup
 ```
 
 Inside `wdir` directory you will find examples of inputs and configurations, as an example this is expert.ai configuration:
@@ -67,5 +67,12 @@ and open https://localhost:5001/ from the browser
 
 ## Integrating expert.ai APIs
 
+Expert.ai provides [Open API specs](https://raw.githubusercontent.com/therealexpertai/nlapi-openapi-specification/master/nlapi.yaml) which can be used to generate clients codes and integrating the API.
 
+https://openapi-generator.tech/ is a tool to generate client code in many programming languages, in our case we used the csharp one:
 
+Open `ApiGenerator` directory to see configs and the command to generate the client code, there you will see:
+
+```
+openapi-generator-cli generate -i nlapi.yaml -g csharp -o ./expertio --config csharp-config.json
+```
