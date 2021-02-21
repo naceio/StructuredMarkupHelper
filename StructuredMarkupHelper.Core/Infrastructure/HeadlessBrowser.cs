@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using HtmlAgilityPack;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Concurrent;
@@ -12,6 +13,11 @@ namespace StructuredMarkupHelper.Core.Infrastructure
     {
         private static HttpClient httpClient = new HttpClient();
         private static ConcurrentDictionary<string, string> loadedHtmls = new ConcurrentDictionary<string, string>();
+
+        private static List<string> validHtmlContentTags = new List<string>
+        {
+            "article","p","h1","h2","h3","h4","h5"
+        };
 
         public string GetHtmlText(string phantomCloudUrl, string url)
         {
@@ -42,6 +48,34 @@ namespace StructuredMarkupHelper.Core.Infrastructure
             }
 
             return html;
+        }
+
+        public string GetContent(HtmlDocument doc)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            TraverseContentChilds(doc.DocumentNode, sb);
+
+            return sb.ToString();
+        }
+
+        private void TraverseContentChilds(HtmlNode node, StringBuilder sb)
+        {
+            if(node.Id == "CybotCookiebotDialog")
+            {
+                return;
+            }
+
+            if (validHtmlContentTags.Contains(node.Name))
+            {
+                sb.Append($" {node.InnerText} ");
+                return;
+            }
+
+            foreach (var c in node.ChildNodes)
+            {
+                TraverseContentChilds(c, sb);
+            }
         }
     }
 }

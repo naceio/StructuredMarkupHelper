@@ -48,27 +48,6 @@ namespace StructuredMarkupHelper.Controllers
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(html);
 
-            //HtmlNode markjsScriptNode = new HtmlNode(HtmlNodeType.Element, htmlDoc, 100);
-            //markjsScriptNode.Name = "script";
-            //markjsScriptNode.Attributes.Add("src", "https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js");
-            //markjsScriptNode.Attributes.Add("integrity", "sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==");
-            //markjsScriptNode.Attributes.Add("crossorigin", "anonymous");
-
-            //HtmlNode scriptNode = new HtmlNode(HtmlNodeType.Element, htmlDoc, 101);
-            //scriptNode.Name = "script";
-            //scriptNode.InnerHtml = @"
-
-            //    window.markInstance = window.markInstance || new Mark(document.body);
-            //    function applyExternalMarkups(word){
-            //        window.markInstance.unmark({done: () => {window.markInstance.mark(word)}})
-            //    }
-                
-            //";
-
-            //var head = htmlDoc.DocumentNode.SelectSingleNode("html").SelectSingleNode("head");
-            //head.AppendChild(markjsScriptNode);
-            //head.AppendChild(scriptNode);
-
             return Content(htmlDoc.DocumentNode.InnerHtml, "text/html");
         }
 
@@ -92,9 +71,11 @@ namespace StructuredMarkupHelper.Controllers
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(html);
 
+            var content = headlessBrowser.GetContent(htmlDoc);
+
             return GenerateMarkup(new MarkupDocument
             {
-                Text = htmlDoc.DocumentNode.InnerText
+                Text = content
             });
         }
 
