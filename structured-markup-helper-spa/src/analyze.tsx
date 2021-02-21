@@ -255,7 +255,7 @@ function Analyze() {
                     </div>
                     <div className="jsonld-container">
                         <a className="jsonld-link" target="blank" href="https://developers.google.com/search/docs/guides/intro-structured-data">Understand how structured data works</a>
-                        <ReactJson style={{ marginTop: '15px' }} enableClipboard={false} displayDataTypes={false} src={{
+                        <ReactJson style={{ marginTop: '15px' }} enableClipboard={true} displayDataTypes={false} src={{
                             '@context': 'http://schema.org',
                             '@graph': markupResult?.data?.mappings?.map(x => {
                                 return {

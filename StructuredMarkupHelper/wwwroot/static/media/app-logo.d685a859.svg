@@ -1,0 +1,33 @@
+
+
+<svg 
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 0 500 500" height="669.33331" width="1000" version="1.1" id="svg_null" >
+	<g id="root" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<rect id="background.primary" fill="white" x="0" y="0" width="500" height="500"></rect>
+		<rect id="frame.secondary" x="163" y="94" width="175" height="175" display="none" fill="#6FA1E6"></rect>
+		<svg width="175" height="175" viewBox="0 0 175 175" version="1.1" id="svg_frame.secondary" x="163" y="94" fill="#6FA1E6">
+			<g id="Page-1" stroke-width="1" fill="none" fill-rule="evenodd">
+				<polygon id="frame.secondary" points="87 0 162 43.75 162 131.25 87 175 12 131.25 12 43.75" fill="#6FA1E6"></polygon>
+			</g>
+		</svg>
+		<path d="M178.443 329.438l134.543 -247.05l0.575 -1.056l-2.086 -1.164l-0.574 1.056l-134.544 247.05l-0.575 1.056l2.086 1.164l0.575 -1.056zm71.439 0l134.543 -247.05l0.575 -1.056l-2.085 -1.164l-0.575 1.056l-134.544 247.05l-0.575 1.056l2.086 1.164l0.575 -1.056zm-115.46 32.473l130.971 -279.59l0.51 -1.088l-2.151 -1.033l-0.51 1.089l-130.972 279.59l-0.51 1.088l2.151 1.033l0.51 -1.089zm192.725 -30.21l-209.554 -255.486l-0.76 -0.927l-1.833 1.54l0.76 0.927l209.555 255.487l0.76 0.927l1.833 -1.54l-0.76 -0.927zm42.926 -36.07l-200.03 -291.641l-0.679 -0.99l-1.956 1.374l0.68 0.99l200.029 291.641l0.679 0.99l1.956 -1.374l-0.68 -0.99z" id="shape.primary" fill="white"></path>
+		<g id="Group" transform="translate(40.000000, 295.000000)">
+			<rect id="Rectangle-22" x="0" y="0" width="420" height="60"></rect>
+			<text id="headerText.secondary" fill="#6FA1E6" font-family="Arial" font-size="50" font-weight="500" letter-spacing="3" data-text-alignment="C" font-style="normal">
+				<tspan x="72.8203125" y="43.5">Markup Expert</tspan>
+			</text>
+		</g>
+		<g id="Group-2" transform="translate(40.000000, 364.000000)">
+			<rect id="Rectangle" x="0" y="0" width="420" height="40"></rect>
+			<text id="captionText.secondary" fill="#6FA1E6" opacity=".8" font-family="Arial" font-size="35" font-weight="500" line-spacing="35" letter-spacing="2.1" data-text-alignment="C" font-style="normal">
+				<tspan x="210" y="194"></tspan>
+			</text>
+		</g>
+	</g>
+</svg>
